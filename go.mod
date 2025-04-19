@@ -6,7 +6,7 @@ toolchain go1.22.6
 
 require (
 	github.com/caddyserver/caddy/v2 v2.9.1
-	github.com/olivierdeckers/dns-regery v0.2.0
+	github.com/olivierdeckers/dns-regery v0.3.0
 )
 
 require (

@@ -93,6 +93,8 @@ github.com/olivierdeckers/dns-regery v0.1.0 h1:7EVfSfa1GqsXcQjQpJbjZWrmK6/IpXKet
 github.com/olivierdeckers/dns-regery v0.1.0/go.mod h1:tcWPg+BmLFOm5yXhXzv8P5vugVJwJ1tgcs/AiIZSqnc=
 github.com/olivierdeckers/dns-regery v0.2.0 h1:lvGIFl1X22n3/K9uUgrRAhoZL0bg6MEzrZ0W9v9vdfs=
 github.com/olivierdeckers/dns-regery v0.2.0/go.mod h1:tcWPg+BmLFOm5yXhXzv8P5vugVJwJ1tgcs/AiIZSqnc=
+github.com/olivierdeckers/dns-regery v0.3.0 h1:PSe0h7Augk3aRZIfJoyC+xmHqOThUPJ20pY95h2g040=
+github.com/olivierdeckers/dns-regery v0.3.0/go.mod h1:tcWPg+BmLFOm5yXhXzv8P5vugVJwJ1tgcs/AiIZSqnc=
 github.com/onsi/ginkgo/v2 v2.13.2 h1:Bi2gGVkfn6gQcjNjZJVO8Gf0FHzMPf2phUei9tejVMs=
 github.com/onsi/ginkgo/v2 v2.13.2/go.mod h1:XStQ8QcGwLyF4HdfcZB8SFOS/MWCgDuXMSBe6zrvLgM=
 github.com/onsi/gomega v1.29.0 h1:KIA/t2t5UBzoirT4H9tsML45GEbo3ouUnBHsCfD2tVg=

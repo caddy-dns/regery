@@ -24,16 +24,16 @@ func (Provider) CaddyModule() caddy.ModuleInfo {
 // Provision sets up the module. Implements caddy.Provisioner.
 func (p *Provider) Provision(ctx caddy.Context) error {
 	p.Provider.APIToken = caddy.NewReplacer().ReplaceAll(p.Provider.APIToken, "")
-  p.Provider.Secret = caddy.NewReplacer().ReplaceAll(p.Provider.Secret, "")
+	p.Provider.Secret = caddy.NewReplacer().ReplaceAll(p.Provider.Secret, "")
 	return nil
 }
 
 // UnmarshalCaddyfile sets up the DNS provider from Caddyfile tokens. Syntax:
 //
-// regery {
-//     api_token <api_token>
-//     secret <secret>
-// }
+//	regery {
+//	    api_token <api_token>
+//	    secret <secret>
+//	}
 func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 	for d.Next() {
 		if d.NextArg() {
@@ -54,17 +54,17 @@ func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 				if d.NextArg() {
 					return d.ArgErr()
 				}
-		  case "secret":
-        if p.Provider.Secret != "" {
-          return d.Err("Secret already set")
-        }
-        if d.NextArg() {
-          p.Provider.Secret = d.Val()
-        }
-        if d.NextArg() {
-          return d.ArgErr()
-        }
-      default:
+			case "secret":
+				if p.Provider.Secret != "" {
+					return d.Err("Secret already set")
+				}
+				if d.NextArg() {
+					p.Provider.Secret = d.Val()
+				}
+				if d.NextArg() {
+					return d.ArgErr()
+				}
+			default:
 				return d.Errf("unrecognized subdirective '%s'", d.Val())
 			}
 		}
@@ -73,9 +73,9 @@ func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 		return d.Err("missing API token")
 	}
 	if p.Provider.Secret == "" {
-    return d.Err("missing secret")
-  }
-  return nil
+		return d.Err("missing secret")
+	}
+	return nil
 }
 
 // Interface guards
