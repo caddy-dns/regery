@@ -15,16 +15,16 @@ To use this module for the ACME DNS challenge, [configure the ACME issuer in you
 
 ```json
 {
-	"module": "acme",
-	"challenges": {
-		"dns": {
-			"provider": {
-				"name": "regery",
-				"api_token": "YOUR_API_TOKEN"
-        secret: YOUR_API_SECRET
-			}
-		}
-	}
+  "module": "acme",
+  "challenges": {
+    "dns": {
+      "provider": {
+        "name": "regery",
+        "api_token": "YOUR_API_TOKEN",
+        "secret": "YOUR_API_SECRET"
+      }
+    }
+  }
 }
 ```
 
@@ -33,13 +33,19 @@ or with the Caddyfile:
 ```
 # globally
 {
-	acme_dns regery ...
+  acme_dns regery {
+    api_token YOUR_API_TOKEN
+    secret YOUR_API_SECRET
+  }
 }
 ```
 
 ```
 # one site
 tls {
-	dns regery ...
+  dns regery {
+    api_token YOUR_API TOKEN
+    secret YOUR_API_SECRET
+  }
 }
 ```
