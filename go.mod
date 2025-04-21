@@ -1,4 +1,4 @@
-module github.com/olivierdeckers/caddy-dns-regery
+module github.com/caddy-dns/regery
 
 go 1.22.3
 
@@ -6,6 +6,7 @@ toolchain go1.22.6
 
 require (
 	github.com/caddyserver/caddy/v2 v2.9.1
+	github.com/libdns/regery v1.0.0
 	github.com/olivierdeckers/dns-regery v0.3.1
 )
 
